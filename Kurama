@@ -1,0 +1,331 @@
+{
+	"name": "Kurama",
+	"isNamedCreature": true,
+	"source": "",
+	"page": 0,
+	"size": "G",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"beast"
+		]
+	},
+	"alignment": [
+		"C",
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 19,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 209,
+		"formula": "22d8 + 110"
+	},
+	"speed": {
+		"walk": 80
+	},
+	"str": 14,
+	"dex": 16,
+	"con": 20,
+	"int": 18,
+	"wis": 12,
+	"cha": 11,
+	"save": {
+		"con": "+11",
+		"cha": "+6"
+	},
+	"skill": {
+		"acrobatics": "+9",
+		"arcana": "+10",
+		"athletics": "+8",
+		"history": "+10",
+		"perception": "+7",
+		"persuasion": "+6"
+	},
+	"passive": null,
+	"languages": [
+		"Common"
+	],
+	"cr": "20",
+	"trait": [
+		{
+			"name": "Chakra",
+			"entries": [
+				"Kurama has 103 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+			]
+		},
+		{
+			"name": "Evasion",
+			"entries": [
+				"When Kurama is targeted by an area effect that lets him make a Dexterity saving throw to take only half damage, such as fireball, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails the save."
+			]
+		},
+		{
+			"name": "Ninja Speed",
+			"entries": [
+				"Kurama can take the dash, dodge, and disengage actions as a bonus action, and can move along vertical surfaces."
+			]
+		},
+		{
+			"name": "Tailed Beasts",
+			"entries": [
+				"Kurama must spend 1 less chakra on all jutsu (included in actions), he regains 10 hit points at the start of each of his turns, he has advantage on Strength and Dexterity checks and saving throws, and has a damage reduction of 5."
+			]
+		},
+		{
+			"name": "Emotion Sense",
+			"entries": [
+				"Kurama can sense the presence of magic and chakra within 30 feet of him. If he senses magic or chakra in this way, he can use his action to see a faint aura around any visible creature or object in the area that bears either or both, and he learns its school of magic or the chakra technique used, if any. This effect can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch of Common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Kurama can make 3 unarmed strikes."
+			]
+		},
+		{
+			"name": "Unarmed Strike",
+			"entries": [
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}13 ({@damage 5d4 + 3}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Hidden Chakra",
+			"entries": [
+				"As a bonus action, Kurama regains 20 chakra points."
+			]
+		},
+		{
+			"name": "Chakra Transfer (1+ Chakra)",
+			"entries": [
+				"Kurama grants one creature he can touch a number of Red Chakra equal to the amount he spends."
+			]
+		},
+		{
+			"name": "Tailed Beast Shockwave (3+ Chakra)",
+			"entries": [
+				"Each creature within a 5 ft. radius must succeed a {@dc 18} Strength saving throw or take 8 ({@damage 1d8 + 4}) force damage and be pushed to the edge of this jutsu's range. Kurama can add an additional 5 ({@damage 1d8}) damage and 5 feet to the affected radius and the distance the target is pushed for every 2 additional chakra point spent. If more than 20 chakra is spent, the ground and buildings within range take double damage. Kurama may spend 4 additional chakra separate from the previous effects to use this as a reaction, causing the ranged attacks it may be made in response to to miss in addition to its normal effects."
+			]
+		},
+		{
+			"name": "Tailed Beast Bomb (20 Chakra)",
+			"entries": [
+				"All creatures in a 10 ft. by 60 ft. line or 20 ft. radius 60 ft. from Kurama must succeed a {@dc 18} Dexterity saving throw. On a failure, they take 59 ({@damage 10d10 + 4}) force damage, are pushed to the closest edge of the area, and fall {@condition prone}. On a success, they take half as much damage. This jutsu ignores evasion."
+			]
+		},
+		{
+			"name": "Nine-Tails Beam (3 Chakra)",
+			"entries": [
+				"Every creature within a 60 ft. line must attempt {@dc 18} Dexterity saving throw, taking 15 ({@damage 2d6 + 4}) force damage on a failure, or half as much on a success. Kurama may use this jutsu up to 9 times on a single action."
+			]
+		},
+		{
+			"name": "Transformation (1 Chakra)",
+			"entries": [
+				"Kurama becomes identical to a person, creature or non-magical object he a complete visual image of. This can not be a light source, armor, tool, or vehicle and, and he can not recreate a magical effect. Creatures must make a {@dc 18} Investigation check to realize that he is transformed. If the creature saw him performing the Jutsu, they automatically succeed. This does not change statistics, save for granting the creature's swimming and flying speeds."
+			]
+		},
+		{
+			"name": "Body Flicker (2 Chakra)",
+			"entries": [
+				"Kurama's movement speed doubles, and his movement does not provoke attacks of opportunity."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Substitution (2+ Chakra)",
+			"entries": [
+				"When Kurama is hit by an attack and would take damage, he decreases the damage by 25 ({@dice 1d10 + 20}) and teleports up to 15 ft. in any direction to an unoccupied space, during which he takes the Hide action. A generic object is left in his place and he takes any remaining damage from that attack. Kurama can add reduce this damage by an additional 6 ({@dice 1d10}) points per chakra point spent over the initial cost."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"B",
+		"O"
+	],
+	"miscTags": [
+		"MW",
+		"RCH"
+	]
+}
+,
+{
+	"name": "Kurama",
+	"isNamedCreature": true,
+	"source": "",
+	"page": 0,
+	"size": "G",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"beast"
+		]
+	},
+	"alignment": [
+		"C",
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 19,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 209,
+		"formula": "22d8 + 110"
+	},
+	"speed": {
+		"walk": 80
+	},
+	"str": 14,
+	"dex": 16,
+	"con": 20,
+	"int": 18,
+	"wis": 12,
+	"cha": 11,
+	"save": {
+		"con": "+11",
+		"cha": "+6"
+	},
+	"skill": {
+		"acrobatics": "+9",
+		"arcana": "+10",
+		"athletics": "+8",
+		"history": "+10",
+		"perception": "+7",
+		"persuasion": "+6"
+	},
+	"passive": null,
+	"languages": [
+		"Common"
+	],
+	"cr": "20",
+	"trait": [
+		{
+			"name": "Chakra",
+			"entries": [
+				"Kurama has 103 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+			]
+		},
+		{
+			"name": "Evasion",
+			"entries": [
+				"When Kurama is targeted by an area effect that lets him make a Dexterity saving throw to take only half damage, such as fireball, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails the save."
+			]
+		},
+		{
+			"name": "Ninja Speed",
+			"entries": [
+				"Kurama can take the dash, dodge, and disengage actions as a bonus action, and can move along vertical surfaces."
+			]
+		},
+		{
+			"name": "Tailed Beasts",
+			"entries": [
+				"Kurama must spend 1 less chakra on all jutsu (included in actions), he regains 10 hit points at the start of each of his turns, he has advantage on Strength and Dexterity checks and saving throws, and has a damage reduction of 5."
+			]
+		},
+		{
+			"name": "Emotion Sense",
+			"entries": [
+				"Kurama can sense the presence of magic and chakra within 30 feet of him. If he senses magic or chakra in this way, he can use his action to see a faint aura around any visible creature or object in the area that bears either or both, and he learns its school of magic or the chakra technique used, if any. This effect can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch of Common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Kurama can make 3 unarmed strikes."
+			]
+		},
+		{
+			"name": "Unarmed Strike",
+			"entries": [
+				"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}13 ({@damage 5d4 + 3}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Hidden Chakra",
+			"entries": [
+				"As a bonus action, Kurama regains 20 chakra points."
+			]
+		},
+		{
+			"name": "Chakra Transfer (1+ Chakra)",
+			"entries": [
+				"Kurama grants one creature he can touch a number of Red Chakra equal to the amount he spends."
+			]
+		},
+		{
+			"name": "Tailed Beast Shockwave (3+ Chakra)",
+			"entries": [
+				"Each creature within a 5 ft. radius must succeed a {@dc 18} Strength saving throw or take 8 ({@damage 1d8 + 4}) force damage and be pushed to the edge of this jutsu's range. Kurama can add an additional 5 ({@damage 1d8}) damage and 5 feet to the affected radius and the distance the target is pushed for every 2 additional chakra point spent. If more than 20 chakra is spent, the ground and buildings within range take double damage. Kurama may spend 4 additional chakra separate from the previous effects to use this as a reaction, causing the ranged attacks it may be made in response to to miss in addition to its normal effects."
+			]
+		},
+		{
+			"name": "Tailed Beast Bomb (20 Chakra)",
+			"entries": [
+				"All creatures in a 10 ft. by 60 ft. line or 20 ft. radius 60 ft. from Kurama must succeed a {@dc 18} Dexterity saving throw. On a failure, they take 59 ({@damage 10d10 + 4}) force damage, are pushed to the closest edge of the area, and fall {@condition prone}. On a success, they take half as much damage. This jutsu ignores evasion."
+			]
+		},
+		{
+			"name": "Nine-Tails Beam (3 Chakra)",
+			"entries": [
+				"Every creature within a 60 ft. line must attempt {@dc 18} Dexterity saving throw, taking 15 ({@damage 2d6 + 4}) force damage on a failure, or half as much on a success. Kurama may use this jutsu up to 9 times on a single action."
+			]
+		},
+		{
+			"name": "Transformation (1 Chakra)",
+			"entries": [
+				"Kurama becomes identical to a person, creature or non-magical object he a complete visual image of. This can not be a light source, armor, tool, or vehicle and, and he can not recreate a magical effect. Creatures must make a {@dc 18} Investigation check to realize that he is transformed. If the creature saw him performing the Jutsu, they automatically succeed. This does not change statistics, save for granting the creature's swimming and flying speeds."
+			]
+		},
+		{
+			"name": "Body Flicker (2 Chakra)",
+			"entries": [
+				"Kurama's movement speed doubles, and his movement does not provoke attacks of opportunity."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Substitution (2+ Chakra)",
+			"entries": [
+				"When Kurama is hit by an attack and would take damage, he decreases the damage by 25 ({@dice 1d10 + 20}) and teleports up to 15 ft. in any direction to an unoccupied space, during which he takes the Hide action. A generic object is left in his place and he takes any remaining damage from that attack. Kurama can add reduce this damage by an additional 6 ({@dice 1d10}) points per chakra point spent over the initial cost."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"B",
+		"O"
+	],
+	"miscTags": [
+		"MW",
+		"RCH"
+	]
+}
