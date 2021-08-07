@@ -1,0 +1,182 @@
+{
+	"siteVersion": "1.134.0",
+	"monster": [
+		{
+			"name": "Isobu",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "G",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"beast"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 161,
+				"formula": "19d8 + 76"
+			},
+			"speed": {
+				"walk": 75
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 18,
+			"int": 16,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"str": "+8",
+				"con": "+10"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"arcana": "+9",
+				"athletics": "+8",
+				"perception": "+7",
+				"performance": "+6",
+				"persuasion": "+6"
+			},
+			"passive": null,
+			"languages": [
+				"Common"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Isobu has 87 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Endurance",
+					"entries": [
+						"When Isobu is targeted by an area effect that lets him make a Constitution saving throw to take only half damage, such as fireball, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails the save."
+					]
+				},
+				{
+					"name": "Ninja Speed",
+					"entries": [
+						"Isobu can take the dash, dodge, and disengage actions as a bonus action, and can move along vertical surfaces."
+					]
+				},
+				{
+					"name": "Tailed Beasts",
+					"entries": [
+						"Isobu must spend 1 less chakra on all jutsu (included in actions), he regains 10 hit points at the start of each of his turns, he has advantage on Strength and Dexterity checks and saving throws, and has a damage reduction of 5."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Isobu can make 3 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}14 ({@damage 5d4 + 4}) bludgeoning damage. Isobu may spend 2 chakra to decrease the target's movement speed by 5 feet until the end of their next turn."
+					]
+				},
+				{
+					"name": "Hidden Chakra",
+					"entries": [
+						"As a bonus action, Isobu regains 17 chakra points."
+					]
+				},
+				{
+					"name": "Chakra Transfer (1+ Chakra)",
+					"entries": [
+						"Isobu grants one creature he can touch a number of Red Chakra equal to the amount he spends."
+					]
+				},
+				{
+					"name": "Tailed Beast Shockwave (3+ Chakra)",
+					"entries": [
+						"Each creature within a 5 ft. radius must succeed a {@dc 17} Strength saving throw or take 7 ({@damage 1d8 + 3}) force damage and be pushed to the edge of this jutsu's range. Isobu can add an additional 5 ({@damage 1d8}) damage and 5 feet to the affected radius and the distance the target is pushed for every 2 additional chakra point spent. If more than 20 chakra is spent, the ground and buildings within range take double damage. Isobu may spend 4 additional chakra separate from the previous effects to use this as a reaction, causing the ranged attacks it may be made in response to to miss in addition to its normal effects."
+					]
+				},
+				{
+					"name": "Tailed Beast Bomb (20 Chakra)",
+					"entries": [
+						"All creatures in a 10 ft. by 60 ft. line or 20 ft. radius 60 ft. from Isobu must succeed a {@dc 17} Dexterity saving throw. On a failure, they take 58 ({@damage 10d10 + 3}) force damage, are pushed to the closest edge of the area, and fall {@condition prone}. On a success, they take half as much damage. This jutsu ignores evasion."
+					]
+				},
+				{
+					"name": "Shadow Strike (4 Chakra)",
+					"entries": [
+						"Isobu's unarmed strikes gain a +1 bonus to their attack and damage rolls, his AC gains a +2 bonus, and when he hits a creatures with a melee attack, it must make a {@dc 17} Strength saving throw or be knocked {@condition prone}. Isobu must spend 1 chakra at the end of each of his turns to maintain this effect."
+					]
+				},
+				{
+					"name": "Illusionary Mist (11+ Chakra)",
+					"entries": [
+						"One creature within 30 ft. must attempt a {@dc 17} Wisdom saving throw. On a failure, they become taunted towards one creature of Isobu's choice on a failure. They may retry this saving throw at each of their turns, ending this effect early on a success."
+					]
+				},
+				{
+					"name": "Great Water Mass Bullet (11 Chakra)",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 30 ft., two targets. {@h}10 ({@damage 2d6 + 3}) piercing damage and 6 ({@damage 1d12}) cold damage.",
+						"Additionally, when you cast this jutsu, you may target an additional creature for every 3 additional chakra spent."
+					]
+				},
+				{
+					"name": "Transformation (1 Chakra)",
+					"entries": [
+						"Isobu becomes identical to a person, creature or non-magical object he a complete visual image of. This can not be a light source, armor, tool, or vehicle and, and he can not recreate a magical effect. Creatures must make a {@dc 17} Investigation check to realize that he is transformed. If the creature saw him performing the Jutsu, they automatically succeed. This does not change statistics, save for granting the creature's swimming and flying speeds."
+					]
+				},
+				{
+					"name": "Body Flicker (2 Chakra)",
+					"entries": [
+						"Isobu's movement speed doubles, and his movement does not provoke attacks of opportunity."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Substitution (2+ Chakra)",
+					"entries": [
+						"When Isobu is hit by an attack and would take damage, he decreases the damage by 25 ({@dice 1d10 + 20}) and teleports up to 15 ft. in any direction to an unoccupied space, during which he takes the Hide action. A generic object is left in his place and he takes any remaining damage from that attack. Isobu can add reduce this damage by an additional 6 ({@dice 1d10}) points per chakra point spent over the initial cost."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		}
+	]
+}
