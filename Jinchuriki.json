@@ -1,0 +1,1245 @@
+{
+	"siteVersion": "1.134.0",
+	"monster": [
+		{
+			"name": "Naruto Uzumaki",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"uzumaki"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 297,
+				"formula": "35d8 + 140"
+			},
+			"speed": {
+				"walk": {
+					"number": 70,
+					"condition": "(80 ft. in initial release 100 ft. in tailed release)"
+				}
+			},
+			"str": 14,
+			"dex": 22,
+			"con": 19,
+			"int": 18,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"con": "+13",
+				"cha": "+11"
+			},
+			"skill": {
+				"acrobatics": "+15",
+				"animal handling": "+10",
+				"athletics": "+11",
+				"performance": "+11",
+				"persuasion": "+11"
+			},
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"cr": "32",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Naruto has 132 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Evasion/Endurance",
+					"entries": [
+						"When Naruto is targeted by an area effect that lets him make a Dexterity or Constitution saving throw to take only half damage, such as fireball, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails the save."
+					]
+				},
+				{
+					"name": "Ninja Speed",
+					"entries": [
+						"Naruto can take the dash, dodge, and disengage actions as a bonus action, and can move along vertical surfaces."
+					]
+				},
+				{
+					"name": "Dying Breath",
+					"entries": [
+						"At the beginning of each of Naruto's turns that he is {@condition unconscious}, he may ignore the condition and immediately take a turn. At the end of his turn, he gains 1 level of {@condition exhaustion}. If he was {@condition unconscious} from having 0 hit points, he does not make a death saving throw at the beginning of that turn, and he regains the {@condition unconscious} condition and gains a failed death saving throw at the end of his turn."
+					]
+				},
+				{
+					"name": "Red Chakra",
+					"entries": [
+						"Some of Naruto's features grant him \"red chakra\". If his own chakra is less than his red chakra, he must attempt a {@dc 12} Constitution saving throw at the end of each of his turns. On a failure, he gains 1 level of {@condition exhaustion}. If he is in Initial Release, the DC becomes 14. If he is in Tailed Release, the DC becomes 16. If he is in Kurama Chakra Mode or Tailed Beast Mode, the DC becomes 18. These special \"red\" chakra are counted separately from his normal chakra. He can use this chakra on one Jutsu or spread them across multiple, but he can not spend these points and his own normal chakra points on the same jutsu. This chakra can extend above his chakra point maximum, and is lost at the end of a short rest."
+					]
+				},
+				{
+					"name": "Six Paths Sage Mode",
+					"entries": [
+						"Some of Naruto's features grant him \"senjutsu chakra\". At the end of each of his turns inside initiative that he does not meditate, 2 senjutsu chakra becomes normal chakra. He does not lose senjutsu chakra in this way outside of initiative. Naruto can spend senjutsu chakra as if it were normal chakra. A creature may have a number of senjutsu chakra points equal to a quarter of their chakra point maximum or Wisdom score, whichever is higher unless they have this feature, in which they may have a number equal to their chakra point maximum. If this limit is exceeded, they become {@condition petrified} and identical to the Sage Creature of the source of the senjutsu until they lose the senjutsu (in this case, a large toad). While Naruto has a number of senjutsu chakra equal to half his normal chakra, he gains the following:",
+						"Naruto's reach increases by +5 ft.",
+						"Naruto's first attack each day against any creature has advantage.",
+						"Proficiency in Dexterity (+14) and Wisdom (+10) saving throws.",
+						"Naruto's attack and damage rolls gain a +1 bonus.",
+						"On a miss, Naruto's unarmed strikes deal half as much damage.",
+						"Naruto's unarmed strikes deal an additional 12 ({@damage 2d10}) damage.",
+						"Naruto may use Sage Mode without spending exclusively or additional senjutsu chakra (recharge 5-6).",
+						"Naruto gains proficiency in Dexterity (+15) and Wisdom (+11) saving throws.",
+						"Naruto gains 30 feet of Truesight.",
+						"Naruto gains a flying speed equal to his movement speed.",
+						"Naruto gains a damage threshold of 30."
+					]
+				},
+				{
+					"name": "Jutsu",
+					"entries": [
+						"Naruto's jutsu have a {@hit 14} to hit and have a save DC of 22"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Naruto can make 3 unarmed strike or kunai attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 5 ft., one target. {@h}20 ({@damage 6d4 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Kunai",
+					"entries": [
+						"{@atk rw} {@hit 16} to hit, range 30/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage. Naruto may spend up to 3 chakra when he takes this action, making one additional attack per chakra point spent. Each additional kunai deals 3 ({@damage 1d4 + 1}) piercing damage on a hit."
+					]
+				},
+				{
+					"name": "Transformation (1+ Chakra)",
+					"entries": [
+						"Naruto becomes identical to a person, creature or non-magical object he a complete visual image of. This can not be a light source, armor, tool, or vehicle and, and he can not recreate a magical effect. Creatures must make an Investigation check realize that he is transformed. If the creature saw him performing the Jutsu, they automatically succeed. This does not change statistics, save for granting the creature's swimming and flying speeds."
+					]
+				},
+				{
+					"name": "Body Flicker (3 Chakra)",
+					"entries": [
+						"Naruto's movement speed doubles, and his movement does not provoke attacks of opportunity."
+					]
+				},
+				{
+					"name": "Shadow Clone (2+ Chakra/Clone)",
+					"entries": [
+						"Naruto creates a any number of clones. The clones have 5 hit points each and they have the chakra spent creating them. The clones can take actions as normal, however they do not benefit from the Extra Attack feature. You control them and they act on the same initiative as you. They last until they are reduced to 0 hit points, they expend all of their chakra, Naruto dismisses them at will, or Naruto falls {@condition unconscious}. If the clone still has chakra when it dissipates, he regains any remaining chakra from the clone - 2 (minimum 0).",
+						"Shadow clones have no range limit as to how far away they can be.",
+						"When creating a shadow clone, Naruto can expend additional chakra to give one of the clones 5 additional hit points per chakra point spent, but he can't give a clone more hit points than his own maximum hit points. He can do this for as many clones as you wish.",
+						"Any effects affecting Naruto when the clone is created carries over to the clone.",
+						"A shadow clone carries a copy of all his equipment, however it does not carry the magical effects over from it beside any base attack roll, damage roll, or AC bonuses (i.e. a cloned vorpal sword is just a +3 sword in the hand of a clone).",
+						"While the clone is active, you are aware of its current activities (such as sleeping, eating, running, fighting or even calculus). When a shadow clone dissipates, the main body will receive any knowledge, experiences and memories it has acquired as if it experienced it itself, as well as matching your shadow clone's {@condition exhaustion} and gradual blindness, deafness, and numbness level (i.e. If you have an {@condition exhaustion} level of 2 while your shadow clone has 5, your {@condition exhaustion} level will increase to 5), but it will not suffer negative effects such as curses, poison or anything of the like."
+					]
+				},
+				{
+					"name": "Rasengan (10 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, reach 5 ft., one target. {@h}12 ({@damage 2d10}) + his Intelligence modifier bludgeoning damage + 12 ({@damage 2d10}) force damage and the target must succeed a Strength saving throw. On a failure, they are pushed 20 feet away from Naruto. He must have a shadow clone within 5 ft. to use this before Naruto (Shinobi World Supplement)."
+					]
+				},
+				{
+					"name": "Summoning Jutsu (4+ Chakra)",
+					"entries": [
+						"Naruto summons one of the Toads of Mount Myoboku underneath him, spending an amount of chakra equal to twice the summoned creature's CR."
+					]
+				},
+				{
+					"name": "'Basic Ninjutsu Technique (1 Chakra)",
+					"entries": [
+						"As a bonus action, Naruto can move across liquid surfaces as if they were solid. If he is submerged, he rises to the surface of the liquid at a rate of 60 feet per round."
+					]
+				},
+				{
+					"name": "Hidden Chakra",
+					"entries": [
+						"When Naruto has less than half his maximum chakra, he gains red chakra equal to his CR. He may use this once, regaining all uses at the end of a long rest."
+					]
+				},
+				{
+					"name": "Initial Release",
+					"entries": [
+						"As a bonus action, Naruto enters Initial Release. This reveals him as a Jinchūriki to anyone that can see him and anyone who can detect magic or see chakra may make an Insight check, and he gains the following benefits:",
+						"The cost of all Jutsu Naruto knows are reduced in chakra costs by 1, except for Jutsu that only cost 1 chakra.",
+						"Naruto's movement speed increases by +10 ft.",
+						"At the start of each of his turns, Naruto regains hit points equal to his Constitution modifier.",
+						"Naruto gains advantage on Strength and Dexterity checks and saving throws.",
+						"This state ends if you choose to do so as an action, or if he is knocked {@condition unconscious}.",
+						"Naruto loses 2 chakra and gains 2 red chakra at the end of each of his turns."
+					]
+				},
+				{
+					"name": "Tailed Release",
+					"entries": [
+						"While Initial Release is active, Naruto gains the following:",
+						"Naruto's unarmed strikes deal an additional {@damage 1d4} slashing damage.",
+						"Naruto's movement speeds increase by 5 x his Dexterity modifier ft.",
+						"Naruto regains additional hit points equal to his Constitution modifier at the beginning of each of his turns.",
+						"Naruto can activate Hidden Chakra as a bonus action, and can use red chakra in tandem with his own.",
+						"Naruto loses 4 chakra and gains 4 red chakra at the end of each of his turns."
+					]
+				},
+				{
+					"name": "Giant Rasengan (12+ Chakra)",
+					"entries": [
+						"Naruto creates a 10 ft. radius thats edge is 5 ft. in front of him. On his next turn, as an action, all creatures in this range are targeted by a Rasengan attack. Naruto may spend 5 additional chakra to increase this jutsu's range by 5 feet. He must have a shadow clone within 5 ft. to use this."
+					]
+				},
+				{
+					"name": "Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, reach 5 ft., one target. {@h}20 ({@damage 8d4}) + his Intelligence modifier thunder damage and 15 ({@damage 6d4}) piercing damage. Naruto and the target must make a Constitution saving throw, taking 9 ({@damage 2d8}) piercing damage and losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration. He must have a shadow clone within 5 ft. to use this before Naruto, War Arc (Shinobi World Supplement).",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Tailed Beast Shockwave (4+ Chakra)",
+					"entries": [
+						"Each creature within a 5 ft. radius must succeed a Strength saving throw or take 4 ({@damage 1d8}) force damage and be pushed to the edge of this jutsu's range. Naruto can add an additional 5 ({@damage 1d8}) damage and 5 feet to the affected radius and the distance the target is pushed for every 2 additional chakra point spent. If more than 20 chakra is spent, the ground and buildings within range take double damage. Naruto may spend 4 additional chakra separate from the previous effects to use this as a reaction, causing the ranged attacks it may be made in response to to miss in addition to its normal effects."
+					]
+				},
+				{
+					"name": "Sage Meditation",
+					"entries": [
+						"As a full turn action, Naruto becomes blind and {@condition prone} until the beginning of his next turn, and 4 points of Naruto's normal chakra becomes senjutsu chakra. If a clone is dispelled while being effected by this action, any chakra it would have granted Naruto is instantly converted into senjutsu chakra."
+					]
+				},
+				{
+					"name": "Sage Art",
+					"entries": [
+						"As part of another jutsu, Naruto either fulfills its cost with senjutsu, or spends an additional amount of senjutsu chakra equal to 1/4 of its cost, doubling the range or damage of, grants a creature disadvantage against any 1 saving throw it incurs, or grants himself advantage on any 1 saving throw it incurs."
+					]
+				},
+				{
+					"name": "Planetary Rasengan (25 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, reach 5 ft., one target. {@h}55 ({@damage 10d10}) + his Intelligence modifier force damage, and the target must attempt a Strength saving throw. On a failure, they are pushed 60 feet away from Naruto. Naruto must prepare this action as an action on the turn before using this jutsu."
+					]
+				},
+				{
+					"name": "Twin Rasengan (10+ Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, reach 5 ft., one target. {@h}18 ({@damage 3d10}) + his Intelligence modifier force damage and the target is pushed 5 feet away from Naruto. Naruto may make 1 additional attack up to the number of hands he has for every 5 additional chakra spent."
+					]
+				},
+				{
+					"name": "Kurama Chakra Mode",
+					"entries": [
+						"While in Tailed Release, Naruto gains the following:",
+						"Naruto gains a damage reduction of 5.",
+						"Naruto may gift a creature he can touch up to 3 chakra or red chakra as a bonus action.",
+						"Naruo sheds bright light for 10 feet and dim light for another 10 feet.",
+						"Naruto gains 1 additional use of Hidden Chakra. This is only granted on his first use of this feature, regaining this use at the end of a long rest.",
+						"Naruto may create up to 9 hands for an equal number of chakra points that last until the end of this feature.",
+						"Naruto loses 6 chakra and gains 6 red chakra at the end of each of his turns."
+					]
+				},
+				{
+					"name": "Tailed Beast Mode",
+					"entries": [
+						"As a full turn action, Naruto becomes identical to Kurama, keeping his actions, features, and total percentage of hit points and chakra points. He loses 6 chakra and gains 6 red chakra at the end of each of his turns."
+					]
+				},
+				{
+					"name": "Magnet Style Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, range 60 ft., one target. {@h}35 ({@damage 14d4}) + his Intelligence modifier bludgeoning damage. The target must make a Constitution saving throw, becoming {@condition restrained} for 5 minutes and losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration. They may retry this saving throw to escape being {@condition restrained}.",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Blue Fire Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, range 60 ft., one target. {@h}50 ({@damage 20d4}) + his Intelligence modifier fire damage. The target must make a Constitution saving throw, taking 9 ({@damage 2d8}) fire damage and losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration.",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Deep-Sea Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, range 60 ft., one target. {@h}50 ({@damage 20d4}) + his Intelligence modifier cold damage. The target must make a Constitution saving throw, becoming {@condition stunned} until the beginning of their next turn and losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration.",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Lava Style Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, range 60 ft., one target. {@h}Their maximum hit points are decreased by 50 ({@dice 20d4}) + his Intelligence modifier hit points. The target must make a Constitution saving throw, losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration.",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Vapor Style Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, range 60 ft., one target. {@h}50 ({@damage 20d4}) + his Intelligence modifier fire damage. The target must make a Constitution saving throw, taking 11 ({@damage 4d4}) additional damage (once per creature) from all sources for 1 minute and losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration. They may retry this saving throw at the end of each of their turns to end the additional damage effect.",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Bubbling Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, range 60 ft., one target. {@h}50 ({@damage 20d4}) + his Intelligence modifier acid damage. The target must make a Constitution saving throw, decreasing their AC by -2 (once per creature) and losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration. They may retry this saving throw at the end of each of their turns to end the AC decrease effect.",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Insectoid Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, range 60 ft., one target. {@h}50 ({@damage 20d4}) + his Intelligence modifier poison damage. The target must make a Constitution saving throw, becoming {@condition poisoned} for 1 minute and losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration. They may retry this saving throw at the end of each of their turns to stop being {@condition poisoned}.",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Inky Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, range 60 ft., one target. {@h}45 ({@damage 18d4}) + his Intelligence modifier thunder damage. The target must make a Constitution saving throw, becoming {@condition blinded} for 1 minute and losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration. They may retry this saving throw at the end of each of their turns to stop being {@condition blinded}.",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Overwhelming Rasenshuriken (20 Chakra)",
+					"entries": [
+						"{@atk mw} +X to hit, range 60 ft., one target. {@h}70 ({@damage 28d4}) + his Intelligence modifier thunder damage. The target must make a Constitution saving throw, losing the ability to cast spells or Jutsu on a failure. This effect can be cured by greater restoration.",
+						"While in Sage Mode, this Jutsu gains a range of 60 feet, and he automatically succeeds the Constitution saving throw."
+					]
+				},
+				{
+					"name": "Tailed Beast Bomb (20 Chakra)",
+					"entries": [
+						"All creatures in a 10 ft. by 60 ft. line or 20 ft. radius 60 ft. from Naruto must succeed a Dexterity saving throw. On a failure, they take 55 ({@damage 10d10}) + his Intelligence modifier force damage, are pushed to the closest edge of the area, and fall {@condition prone}. On a success, they take half as much damage. This jutsu ignores evasion."
+					]
+				},
+				{
+					"name": "Truth Seeking Orb",
+					"entries": [
+						"As a reaction when Naruto would take damage, he diverts said damage to his 6 truth-seeking orbs. Each orb has 50 hit points. Once destroyed, an orb is lost forever."
+					]
+				},
+				{
+					"name": "Baryon Mode",
+					"entries": [
+						"While in Kurama Chakra Mode, Naruto gains the following until he becomes {@condition unconscious}:",
+						"Naruto gains an additional damage reduction of 5 (10 total).",
+						"Naruto adds Kurama's hit points and his chakra points to his hit points (.",
+						"At the start of each of Naruto's turns, his current and maximum hit points are decreased by 20 hit points.",
+						"Any jutsu Naruto uses spends hit points instead of chakra points.",
+						"Naruto sheds bright light for 10 feet and dim light for another 10 feet (20 ft. total).",
+						"Naruto has a number of hands up to the most tails your Tailed Beast has.",
+						"Naruto's unarmed strikes deal an additional {@damage 1d4} force damage.",
+						"At the end of each of his turns, Naruto may choose 1 creature who he has damaged on the same turn. That creature automatically loses 20 maximum and current hit points.",
+						"This feature ends when Naruto become {@condition unconscious}.",
+						"When Naruto's hit points are reduced to 0, he is stable, but he loses access to all Path of the Beast features as Kurama dies."
+					]
+				},
+				{
+					"name": "Tailed Beast Bomb Enhancement (15 Chakra)",
+					"entries": [
+						"As part of casting another jutsu that deals damage, Naruto adds Tailed Beast Bomb's range, damage, or half of both."
+					]
+				},
+				{
+					"name": "Hashirama Regeneration (5 Chakra)",
+					"entries": [
+						"As a bonus action, Naruto regains 6 ({@dice 1d10}) + his Constitution modifier hit points."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Substitution (3+ Chakra)",
+					"entries": [
+						"When Naruto is hit by an attack and would take damage, he decreases the damage by 6 ({@dice 1d10}) + his CR and teleports up to 15 ft. in any direction to an unoccupied space, during which he takes the Hide action. A generic object is left in his place and he takes any remaining damage from that attack. Naruto can add reduce this damage by an additional 6 ({@dice 1d10}) points per chakra point spent over the initial cost."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"unconscious"
+			]
+		},
+		{
+			"name": "Killer B",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"dexterity": "+6",
+				"constitution": "+6"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"insight": "+4",
+				"performance": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Killer B has 40 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Endurance",
+					"entries": [
+						"When Killer B is targeted by an effect that allows him to make a Constitution saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Killer B can make 7 supervibrato lightning blade attacks or 2 Samehada attacks."
+					]
+				},
+				{
+					"name": "Supervibrato Lightning Blade",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@dice 1d6 + 4}) magical slashing damage."
+					]
+				},
+				{
+					"name": "Samehada",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}15 ({@damage 3d6 + 4}) necrotic damage. On a hit, grants B {@dice 1d6} temporary hit points or restores {@dice 1d6} chakra points."
+					]
+				},
+				{
+					"name": "Lightning Style",
+					"entries": [
+						"Lariat (10 Chakra). B moves 15-45 feet in a straight line and makes a single creature within 5 feet attempt a {@dc 14} Dexterity saving throw. On a failure, they take 31 ({@dice 4d12 + 4}) magical bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Fu",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 88,
+				"formula": "16d8 + 16"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "flying"
+				}
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 12,
+			"int": 14,
+			"wis": 18,
+			"cha": 14,
+			"save": {
+				"dexterity": "+7",
+				"wisdom": "+7",
+				"charisma": "+5"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+7"
+			},
+			"passive": 16,
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Fu has 30 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"When Fu is targeted by an effect that allows her to make a Dexterity saving throw to take half damage on a success, she takes no damage on a success and half damage on a failure."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Fu can make 2 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@dice 2d4 + 4}) magical bludgeoning damage."
+					]
+				},
+				{
+					"name": "Scale Powder (4 Chakra)",
+					"entries": [
+						"All creatures within 60 feet must succeed a {@dc 15} Dexterity saving throw or be {@condition blinded} until the beginning of Fu's next turn"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded"
+			]
+		},
+		{
+			"name": "Utakata",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 88,
+				"formula": "16d8 + 16"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 12,
+			"int": 16,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"dexterity": "+6",
+				"wisdom": "+6"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Utakata has 30 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"When Utakata is targeted by an effect that allows him to make a Dexterity saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Utakata can make 2 unarmed strikes or 5 acid permeation attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@dice 2d4 + 3}) magical bludgeoning damage."
+					]
+				},
+				{
+					"name": "Acid Permeation (2 Chakra)",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 30 ft., one target. {@h}6 ({@damage 1d6 + 3}) acid damage."
+					]
+				},
+				{
+					"name": "Soap Bubble Ninjutsu (15 Chakra)",
+					"entries": [
+						"Utakata blows a 15 foot radius of bubbles up to 60 feet away from him. Once per turn when a creature moves while inside this area, they must succeed a {@dc 14} Dexterity saving throw. On a failure, they take 10 ({@damage 2d6 + 3}) acid damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Han",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 190,
+				"formula": "20d8 + 100"
+			},
+			"speed": {
+				"walk": 55
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"dexterity": "+8",
+				"constitution": "+8"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Han has 35 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"When Han is targeted by an effect that allows him to make a Dexterity saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				},
+				{
+					"name": "Endurance",
+					"entries": [
+						"When Han is targeted by an effect that allows him to make a Constitution saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Han can make 2 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@dice 4d4 + 5}) magical bludgeoning damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Roshi",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 187,
+				"formula": "22d8 + 88"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"constitution": "+7"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Roshi has 35 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Endurance",
+					"entries": [
+						"When Roshi is targeted by an effect that allows him to make a Constitution saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Roshi can make 2 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@dice 2d4 + 4}) magical bludgeoning damage."
+					]
+				},
+				{
+					"name": "Lava Style",
+					"entries": [
+						"Scorching Rock (18 Chakra). Ranged Spell Attack: {@hit 6} to hit, reach 5 ft., one target. {@h}16 ({@damage 4d6 + 1}) fire damage + 8 ({@damage 2d4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Lava Style",
+					"entries": [
+						"Crimson Flame (30 Chakra). All creatures in a 10 foot radius up to 60 feet away must make a Dexterity saving throw. On a failure, they take 51 ({@damage 8d10 + 4}) fire damage plus 14 ({@damage 3d8}) force damage and is pushed 30 ft away. On a success, they take half as much damage and are moved half as far."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Yagura Karatachi",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "13d8 + 26"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 14,
+			"int": 14,
+			"wis": 16,
+			"cha": 13,
+			"save": {
+				"constitution": "+5",
+				"wisdom": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Yagura has 30 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"When Yagura is targeted by an effect that allows him to make a Dexterity saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Yagura can make 2 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@dice 2d4 + 4}) magical bludgeoning damage. He may spend 1 chakra on a hit to decrease the target's movement speed by 5 feet"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Yugito Nii",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 14,
+			"int": 16,
+			"wis": 14,
+			"cha": 13,
+			"save": {
+				"constitution": "+5",
+				"intelligence": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+5",
+				"persuasion": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"Common"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Yugito has 30 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"When Yugito is targeted by an effect that allows him to make an Intelligence or Wisdom saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Yugito can make 2 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 15 ft., one target. {@h}9 ({@dice 2d4 + 4}) magical slashing damage."
+					]
+				},
+				{
+					"name": "Great Fireball (8+ Chakra)",
+					"entries": [
+						"Yugito exhales a fireball up to 150 feet away. All creatures within a 10 foot radius must attempt a {@dc 16} Dexterity saving throw. On a failure, they take 34 ({@damage 8d6 + 3}) fire damage. On a success, they take half as much damage. Yugito may increase this damage by 3 ({@damage 1d6}) fire damage for every additional chakra point spent."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Gaara",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 18,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"dexterity": "+8",
+				"constitution": "+8"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Gaara has 35 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Endurance",
+					"entries": [
+						"When Gaara is targeted by an effect that allows him to make a Dexterity saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Naruto can make 2 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@dice 2d4 + 4}) magical bludgeoning damage."
+					]
+				},
+				{
+					"name": "Sand Buckshot (6+ Chakra)",
+					"entries": [
+						"Gaara fires three hardened sand pellets that deal 6 ({@dice 1d4 + 4}) magical piercing damage at creatures within 30 feet. He can fire one additional pellet for every 2 additional chakra spent."
+					]
+				},
+				{
+					"name": "Sand Coffin (8 Chakra)",
+					"entries": [
+						"One creature within 90 feet must succeed a {@dc 17} Wisdom saving throw. On a failure, they are {@condition paralyzed} for 1 minute (concentration) and they gain full cover."
+					]
+				},
+				{
+					"name": "Sand Coffin Crush",
+					"entries": [
+						"' While a creature is in Sand Coffin, Gaara can crush them, dealing 21 ({@damage 3d10 + 4}) force damage."
+					]
+				},
+				{
+					"name": "Gold Spear (2 Chakra)",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 10 ft., one target. {@h}4 ({@damage 1d8}) piercing damage plus 8 ({@damage 1d8 + 4}) force damage."
+					]
+				},
+				{
+					"name": "Gold Dust Imperial Funeral (32 Chakra)",
+					"entries": [
+						"Each creature in a 100 foot radius must make a {@dc 17} Constitution saving throw. On a failure, it takes 51 ({@damage 8d10 + 4}) bludgeoning damage, is {@condition paralyzed} until the end of your next turn. On a success, they take half as much damage."
+					]
+				},
+				{
+					"name": "Gold Needle Bomb (4 Chakra)",
+					"entries": [
+						"Any creatures of Gaara's choice in a 30 foot radius must attempt a {@dc 17} Dexterity saving throw. On a failure, the creatures take 15 ({@damage 2d10 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Gold Dust Drizzle (8 Chakra)",
+					"entries": [
+						"Every creature in a 40 foot line must make a {@dc 17} Dexterity saving throw. On a failure, they take 18 ({@damage 3d8 + 4}) piercing damage plus 9 ({@damage 2d4 + 4}) force damage."
+					]
+				},
+				{
+					"name": "Gold Dust Gathering (4 Chakra)",
+					"entries": [
+						"The Third Kazekage makes 6 thrown weapons or pieces or ammunition, or one other weapon. He is automatically proficient in these weapons, and they disintegrate after two attacks."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Sand Armor (2+ Chakra)",
+					"entries": [
+						"Gaara gains 10 temporary hit points for every 2 chakra points spent."
+					]
+				},
+				{
+					"name": "Sand Shield",
+					"entries": [
+						"Once per round, roll {@dice 1d20}. On a 17 or higher, Gaara gains +5 AC until the end of his next turn. On a 16 or lower, he regains his reaction."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
