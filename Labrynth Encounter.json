@@ -1,0 +1,514 @@
+{
+	"siteVersion": "1.134.0",
+	"monster": [
+		{
+			"name": "Madara Uchiha",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 304,
+				"formula": "32d8 + 160"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 20,
+			"int": 16,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"dexterity": "+11",
+				"charisma": "+7"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"stealth": "+11",
+				"perception": "+9",
+				"deception": "+7"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 19,
+			"languages": [
+				"Common"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Madara has 65 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Chakra Sense",
+					"entries": [
+						"Madara can sense chakra and magical effects within 100 feet of him."
+					]
+				},
+				{
+					"name": "Sharingan",
+					"entries": [
+						"Foresight. Madara has advantage on Dexterity and Wisdom saving throws."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"At the beginning of each of his turns, Madara must choose between being able to use actions beginning with Sharingan or Rinnegan."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Madara can make 4 unarmed strikes, 8 Susanoo Slashes, 8 Black Receiver attacks, or 4 Demonic Statue Chain attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}16 ({@dice 4d4 + 5}) magical bludgeoning damage."
+					]
+				},
+				{
+					"name": "Hashirama Regeneration (2 Chakra)",
+					"entries": [
+						"Madara regains regains 6 ({@dice 1d8 + 2}) hit points."
+					]
+				},
+				{
+					"name": "Great Fire Annihilation (14 Chakra)",
+					"entries": [
+						"All creatures in a 30 foot wide 60 foot line must succeed a {@dc 19} Dexterity saving throw. On a failure, they take 41 ({@damage 6d6 + 3}) fire damage. On a success, they take half as much. This action ignores the Evasion feature. If he maintains concentration, Madara can choose to have every creature in the same area repeat this saving throw, dealing 7 ({@damage 2d6}) fire damage instead, once per turn.",
+						"Sharingan: Susanoo Madara surrounds his body in a blue, armored form. His size becomes Huge, he gains +7 AC. He also gains the Susanoo Slash action. He can maintain his Susanoo while wielding using Rinnegan as well."
+					]
+				},
+				{
+					"name": "Susanoo Slash",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}16 ({@dice 3d6 + 5}) magical slashing damage."
+					]
+				},
+				{
+					"name": "Sharingan",
+					"entries": [
+						"Genjutsu (5-12 Chakra). One creature within 40 feet that is not blind must succeed a {@dc 19} Wisdom saving throw. On a failure, they are effected by one of the following:",
+						"The target is {@condition blinded}. Costs 7 chakra.",
+						"The target is {@condition deafened}. Costs 5 chakra.",
+						"The target is {@condition frightened}. Costs 6 chakra.",
+						"The target is affected by the confusion spell. Costs 8 chakra.",
+						"The target is {@condition restrained}. Costs 8 chakra.",
+						"The target is {@condition paralyzed}. Costs 12 chakra."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Shinra Tensei (5+ Chakra). Each creature within 30 + 5 per additional chakra point spent foot radius must succeed a {@dc 19} Strength saving throw. On a failure, they are pushed to the closest edge of this action's range and take {@dice 2d6 + 1d6} per additional chakra point spent force damage. If 20 or more chakra is spent on this jutsu, objects take twice as much damage."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Bansho Ten'in (2+ Chakra). Each creature within 30 + 5 per additional chakra point spent foot radius must succeed a {@dc 19} Strength saving throw. On a failure, they moved any distance toward the Deva Path of his choice in the most direct path possible."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Tengai Shinsen (20+ Chakra). Madara launches a black sphere within 1 mile of himself that becomes an up to 160 foot sphere as it rips up parts of the terrain. All creatures within 60 feet of the sphere must succeed a {@dc 19} Strength saving throw. On a failure, they are drawn to the closest area of the sphere and are {@condition restrained}. All creatures within 10 + 5 per additional chakra point spent feet of the sphere must retry this saving throw at the end of each of their turns for 1 hour. This effect ends early if it impacts the ground, as detailed later, the sphere, which has an AC of 26 and has 30 HP is destroyed, or Madara ends it early. It is immune to Psychic damage but vulnerable to force damage. Madara may move the sphere up to 1 mile in any direction up to 5 miles from him as an action, or cause it to impact the ground directly beneath it. Upon impact, creatures {@condition restrained} by the Chibaku Tensei must succeed a {@dc 19} Strength saving throw or take 31 ({@damage 8d6}) bludgeoning damage, while creatures within 60 feet of the satellite's edge must pass a Dexterity saving throw or take 39 ({@damage 10d6}) bludgeoning damage from the impact. On a success, creatures take half damage. Madara may make a second Chibaku Tensei collide with the first on his next turn for 20 chakra, causing the first's impact effect to repeat."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Four-Armed Asura (2 Chakra). Madara grows 4 additional arms."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Weaponsmith (2 Chakra). Madara transforms one of his arms into one weapon of his choice. He can not be disarmed of this weapon."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Reinforced Asura (5 Chakra). Madara gains +5 AC for 1 minute or until he runs out of chakra."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Flaming Arrow of Amazing Ability (5 Chakra). Ranged Spell Attack: {@hit 10} to hit, range 60 ft., one target. {@h}19 ({@dice 3d8 + 5}) magical bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Chakra Propulsion Cannon (10 Chakra). All creatures in a 100 foot line must succeed a {@dc 19} Dexterity saving throw. On a failure, they take 20 ({@damage 4d6 + 5}) force damage. On a success, they take half as much."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Absorption Soul Technique (20 Chakra). One creature within 30 feet must succeed a {@dc 19} Wisdom saving throw. On a failure, they take 24 ({@damage 4d8 + 5}) psychic damage and Madara learns a portion of their knowledge. On a success, they take half as much damage."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Summoning (1+ Chakra). Madara summons one creature of his choice to an open space within 15 feet, spending a number of chakra equal to their CR. This creature has the Six Paths of Pain's Shared Vision and Chakra Sense feature, becomes Huge if it is not larger, and is {@condition charmed} by him. This action can only be used up to 5 times."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Seal Jutsu Absorption. One creature within 5 feet of Madara must succeed a {@dc 19} Constitution saving throw. On a failure, they lose 22 ({@dice 3d8 + 8}) chakra points."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Jigokudo (25 Chakra). While grappling another creature, Madara summons a massive disfigured head. The {@condition grappled} creature must succeed a {@dc 22} Wisdom saving throw. On a failure, they are {@condition paralyzed} until the end of their next turn. As an action, Madara can ask the creature a question. If they answer truthfully or succeed a {@dc 22} Deception check, they gain 1 level of {@condition exhaustion}. If they lie and fail the check, they take 42 ({@damage 6d8 + 5}) psychic damage. If this reduces a creature to 0 hit points, they die instantly."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Black Receivers (10 Chakra). Ranged Spell Attack: {@hit 10} to hit, range 120 ft., one target. {@h}9 ({@dice 1d8 + 5}) magical piercing damage and the receiver stays in their body. Each receiver has an AC of 23 and 5 hit points. Madara can spend 1 chakra as an action to deal {@dice 1d4} fire per receiver to and reducing the movement speed by 20% per receiver until the beginning of his next turn of every creature of his choice with receivers in their body."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Demonic Statue Chains (15 Chakra). Ranged Spell Attack: {@hit 10} to hit, range 100 ft., one target. {@h}45 ({@damage 5d8 + 5}) psychic damage and is {@condition grappled} by Madara for 1 minute (concentration) or until they win the grapple contest. Jinchuriki {@condition grappled} by this Jutsu are not able to access their Subclass features for its duration. Tailed Beasts that are affected by this Jutsu are {@condition paralyzed} for the duration. As an action, Madara can deal 14 ({@damage 2d8 + 5}) psychic damage to affected creatures."
+					]
+				},
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Gedo Art of Rinne Rebirth. Madara resurrects any number of creatures as per the True Resurrection spell without the 200 year limit. He dies immediately after using this jutsu. He can only be resurrected by the Wish spell or a similar effect."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Rinnegan",
+					"entries": [
+						"Seal Jutsu Absorption. When Madara is targeted by a jutsu that deals damage, he may erect a barrier, reducing its amount of chakra by 22 ({@dice 3d8 + 8}) chakra points, regaining half as much. If this reduces the jutsu to 0 chakra, it is completely dissipated."
+					]
+				}
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"restrained"
+			]
+		},
+		{
+			"name": "Asuma Sarutobi",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"sarutobi"
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "16d8 + 32"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 14,
+			"wis": 10,
+			"cha": 14,
+			"save": {
+				"dex": "+8",
+				"int": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"arcana": "+7",
+				"investigation": "+7",
+				"perception": "+5",
+				"persuasion": "+7",
+				"sleight of hand": "+8",
+				"survival": "+5"
+			},
+			"passive": null,
+			"languages": [
+				"Common"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Asuma has 31 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"When Asuma is targeted by an area effect that lets him make a Dexterity saving throw to take only half damage, such as fireball, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails the save."
+					]
+				},
+				{
+					"name": "Ninja Speed",
+					"entries": [
+						"Asuma can take the dash, dodge, and disengage actions as a bonus action, and can move along vertical surfaces."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Asuma can make 3 unarmed strike, Flying Swallow, or kunai attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 3d4 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Flying Swallow",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 5d4 + 3}) fire damage."
+					]
+				},
+				{
+					"name": "Kunai",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 30/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage. Asuma may spend up to 3 chakra when he takes this action, making one additional attack per chakra point spent. Each additional kunai deals 3 ({@damage 1d4 + 1}) piercing damage on a hit."
+					]
+				},
+				{
+					"name": "Welcoming Approach",
+					"entries": [
+						"Thousand-Armed Murder (12 Chakra). As a bonus action, Asuma creates an angelic, thousand-armed being from his chakra. Until the beginning of his next turn, when he takes the attack action, he can not make ranged or weapon attacks, but his unarmed strikes gain an additional 15 feet of reach and he may attack 3 additional times."
+					]
+				},
+				{
+					"name": "Burning Ash (14 Chakra)",
+					"entries": [
+						"Asuma exhales a 20 foot sphere of ash anywhere within 30 feet. The cloud spreads around corners and is heavily obscured. It lasts for 1 minute or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. As a bonus action, for 1 chakra point, he can move the cloud 15 feet in any direction. If the cloud comes in contact with fire, it ignites. The cloud is destroyed, and very creature within the cloud must attempt a {@dc 15} Dexterity saving throw, taking 54 ({@damage 8d10 + 4d4}) fire damage on a failure."
+					]
+				},
+				{
+					"name": "Transformation (1+ Chakra)",
+					"entries": [
+						"Asuma becomes identical to a person, creature or non-magical object he a complete visual image of. This can not be a light source, armor, tool, or vehicle and, and he can not recreate a magical effect. Creatures must make an Investigation check realize that he is transformed. If the creature saw him performing the Jutsu, they automatically succeed. This does not change statistics, save for granting the creature's swimming and flying speeds."
+					]
+				},
+				{
+					"name": "Body Flicker (3 Chakra)",
+					"entries": [
+						"Asuma's movement speed doubles, and his movement does not provoke attacks of opportunity."
+					]
+				},
+				{
+					"name": "Basic Ninjutsu Technique (1 Chakra)",
+					"entries": [
+						"As a bonus action, Asuma can move across liquid surfaces as if they were solid. If he is submerged, he rises to the surface of the liquid at a rate of 60 feet per round."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Substitution (3+ Chakra)",
+					"entries": [
+						"When Asuma is hit by an attack and would take damage, he decreases the damage by 19 ({@dice 1d10 + 14}) and teleports up to 15 ft. in any direction to an unoccupied space, during which he takes the Hide action. A generic object is left in his place and he takes any remaining damage from that attack. Asuma can add reduce this damage by an additional 6 ({@dice 1d10}) points per chakra point spent over the initial cost."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "White Zetsu",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "plant",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": {
+					"number": 20,
+					"condition": "burrowing"
+				}
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 8,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"wisdom": "+6"
+			},
+			"skill": {
+				"perception": "+6",
+				"nature": "+2"
+			},
+			"passive": 16,
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"telepathy 60 feet (only with other White Zetsu)"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"White Zetsu have 8 chakra points which they can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Mutated Human",
+					"entries": [
+						"White Zetsu do not need to eat, drink, or sleep. If within 15 feet of an exceptional well of natural energy, such as a Jinchuriki in Bijuu Chakra Mode, White Zetsu become a Medium tree."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5({@dice 1d4 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Hashirama Regeneration (2 Chakra)",
+					"entries": [
+						"White Zetsu regains 6 ({@dice 1d8 + 2}) hit points."
+					]
+				},
+				{
+					"name": "Disguise (8 Chakra)",
+					"entries": [
+						"White Zetsu disguises itself as another Medium creature. It becomes indistinguishable from it, even with chakra detection. Its features, actions, and ability scores do not change."
+					]
+				},
+				{
+					"name": "Possession (8 Chakra)",
+					"entries": [
+						"Whet Zetsu surrounds an unconcious Medium creature with 0 hit points with its body. It gains any features and actions the creature had, as well as their Strength, Dexterity, and Constitution ability scores. Very few White Zetsu can use this."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
