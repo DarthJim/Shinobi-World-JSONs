@@ -1,0 +1,748 @@
+{
+	"siteVersion": "1.134.0",
+	"monster": [
+		{
+			"name": "Third Kazekage",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 123,
+				"formula": "19d8 + 38"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 18,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"dexterity": "+7",
+				"intelligence": "+8"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+7",
+				"insight": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"Common"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"The Third Kazekage has 30 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"When the Third Kazekage is targeted by an effect that allows him to make a Dexterity saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Third Kazekage can make 2 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@dice 2d4 + 3}) magical bludgeoning damage."
+					]
+				},
+				{
+					"name": "Iron Needle Bomb (4 Chakra)",
+					"entries": [
+						"Any creatures of the Third Kazekage's choice in a 30 foot radius must attempt a {@dc 16} Dexterity saving throw. On a failure, the creatures take 15 ({@damage 2d10 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Iron Sand Drizzle (8 Chakra)",
+					"entries": [
+						"Every creature in a 40 foot line must make a {@dc 16} Dexterity saving throw. On a failure, they take 18 ({@damage 3d8 + 4}) piercing damage plus 9 ({@damage 2d4 + 4}) force damage."
+					]
+				},
+				{
+					"name": "Iron Sand Gathering (4 Chakra)",
+					"entries": [
+						"The Third Kazekage makes 6 thrown weapons or pieces or ammunition, or one other weapon. He is automatically proficient in these weapons, and they disintegrate after two attacks."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Chikamatsu Collection of Ten Puppets",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 950,
+				"formula": "100d8 + 500"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 2,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"perception": "+7"
+			},
+			"senses": [
+				"blindsight 20 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Empty Shell",
+					"entries": [
+						"The Chikamatsu Collection of Ten Puppets must either be controlled by another creature capable of controlling puppets."
+					]
+				},
+				{
+					"name": "Squad of Puppets",
+					"entries": [
+						"The Chikamatsu Collection of Ten Puppets consists of 10 medium sized puppets. This construct requires 10 medium sized spaces in order to be summoned and used. Each puppet also has an individual hit point maximum of 1/10 of the hit points on this stat block. If one puppet were to be lowered to 0 hit points, it would be destroyed and would not be able to take any actions."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiple Attackers",
+					"entries": [
+						"Each puppet in the Chikamatsu Collection of Ten Puppets can make one attack per turn.",
+						"Puppet 1:"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) bludgeoning damage and the target must succeed a {@dc 17} Intelligence saving throw or be {@condition stunned} until the end of their next turn.",
+						"Puppet 2:"
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Puppet 2 makes 2 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Trapped Explosion",
+					"entries": [
+						"{@atk rw} Each creature in a 15 ft. cone must succeed a {@dc 17} Intelligence saving throw or be trapped within a cage until the end of The Chikamatsu Collection of Ten Puppet's next turn. Each creature that failed must then make a {@dc 17} Dexterity saving throw or take {@damage 20d6} fire damage. Half as much on a success.",
+						"Puppet 3:"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Collaboration Technique",
+					"entries": [
+						"Chakra Shuriken. If Puppet 3 and Puppet 4 are within 5 ft. of each other, this puppet transforms its face into a shuriken made of chakra and links hands with Puppet 4. It loses all movement speed and shares a space with Puppet 4. Puppet 3 will stay in this form until it takes another action or Puppet 4 reverts back to its original form. This can only be used once per long rest.",
+						"Puppet 4:"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Collaboration Technique",
+					"entries": [
+						"Chakra Shuriken. If Puppet 3 and Puppet 4 are within 5 ft. of each other, this puppet links hands with Puppet 3 and extends its hand with a chain hidden in its forearm. While in this form Puppet 4 make take the Chakra Shuriken action. Puppet 4 will stay in this form until it makes an unarmed strike or until Puppet 3 reverts back to its original form. This can only be used once per long rest."
+					]
+				},
+				{
+					"name": "Chakra Shuriken",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, reach 5 ft. wide 20 ft. line. {@h}21 ({@dice 4d8 + 2}) magical slashing damage.",
+						"Puppet 5:"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage.",
+						"Extended cables. Ranged Weapon Attack. {@hit 9} to hit, reach 40 ft. cone. {@h}19 ({@damage 4d8 + 1}) piercing damage. Each creature hit must make a {@dc 17} Constitution saving throw or be {@condition restrained} until the end of The Chikamatsu Collection of Ten Puppet's next turn.",
+						"Puppet 6:"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage.",
+						"Puppet 7:"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage.",
+						"Puppet 8:"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Secret White Technique",
+					"entries": [
+						"Three Jewels Suction Crushing. Puppet 8 may take this action by being within 10 ft of both Puppet 6 and Puppet 7. When this action is taken, Puppets 6 and 7 enter Puppet 8's space and Puppet 8's size becomes large. While Puppets 6 and 7 share a space with Puppet 8 they cannot take any actions. Puppet 8 then stands on top of the shoulders of Puppets 6 and 7 and form a vacuum force. This is a 60 ft. cone sucking force that pulls enemies in and pushes them 15 ft. behind Puppet 8. If an enemy starts its turn in the cone, it has its movement speed halved. If an enemy ends its turn in the cone, it is pulled 20 ft. toward Puppet 8. If an enemy is pulled within 5 ft. of Puppet 8, it takes 75 ({@damage 20d6 + 5}) bludgeoning damage. The user must maintain concentration on this action and while Puppet 8 is maintaining this action, Puppet 8 has no movement speed and cannot take any other actions. This action can only be used once per long rest.",
+						"Puppet 9:"
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Puppet 9 makes 2 longsword attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage.",
+						"Puppet 10:"
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Sealing Technique",
+					"entries": [
+						"Lion Closing Roar. The target must make a {@dc 17} Intelligence saving throw or be captured by the Lion head. When captured by the Lion, the target is {@condition paralyzed}. This condition will last until the lion is destroyed or until the user of Chikamatsu Collection of Ten Puppets is {@condition incapacitated}. The Lion has 150 hit points and an AC of 19."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"restrained",
+				"stunned"
+			]
+		},
+		{
+			"name": "Mother and Father",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 127,
+				"formula": "15d8 + 60"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 3,
+			"wis": 14,
+			"cha": 3,
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				""
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Empty Shell",
+					"entries": [
+						"The puppet must either be controlled by another creature capable of controlling puppets or be piloted by a Medium or smaller creature."
+					]
+				},
+				{
+					"name": "Razor Wire",
+					"entries": [
+						"Mother and Father have a wire that runs in a straight line between the two puppets. Once per round per creature, when a creature crosses the wire or the wire crosses a creature, they must succeed a {@dc 18} Dexterity saving throw or take 22 ({@damage 6d4 + 5}) slashing damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The puppet makes two blade attacks."
+					]
+				},
+				{
+					"name": "Blade",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one creature. {@h}32 ({@damage 6d8 + 5}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Chakra Shield",
+					"entries": [
+						"' When the puppet is targeted by a jutsu that deals damage, it reduces said damage by 4 ({@dice 1d8}) for itself and every creature within 5 feet of it. The creature controlling it may increase the amount of damage reduced by 5 ({@dice 1d8}) for every 3 chakra points spent as part of this reaction."
+					]
+				}
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Sanshōuo",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "H",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 341,
+				"formula": "22d20 + 110"
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"dex": "+6",
+				"con": "+11",
+				"wis": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Empty Shell",
+					"entries": [
+						"Sanshōuo must either be controlled by another creature capable of controlling puppets or be piloted by a Medium or smaller creature. Additionally, up to 3 creatures may occupy Sanshōuo's space, forcing all effects that would target them to target it instead and restring their action to only being able to end this effect."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Sanshōuo makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}26 ({@damage 3d12 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}26 ({@damage 3d12 + 7}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 20} Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Black Secret Technique",
+					"entries": [
+						"Machine One Shot. One creature within 30 feet must succeed a {@dc 21} Intelligence saving throw or move inside Sanshōuo's space and be {@condition restrained} until Sanshōuo is reduced to 0 hit points or uses its action to end this effect. While this is active, Sanshōuo can't use its action for any other purpose."
+					]
+				},
+				{
+					"name": "Shield",
+					"entries": [
+						"Sanshōuo deploys a 25 ft. long iron shield along one of its sides. The shield counts as full cover and has 300 hit points. It can not take actions except to end this effect or Black Secret Technique: Machine One Shot, it loses its burrowing speed, and its movement speed becomes 5 ft. If it is attacked on a side perpendicular to the shield, it must succeed a Constitution saving throw with a DC equal to half the damage taken or be {@condition stunned} until the end if its next turn and be unable to use this action until the end of a long rest."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Kuroari",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "L",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 225,
+				"formula": "18d10 + 126"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 9,
+			"con": 24,
+			"int": 3,
+			"wis": 15,
+			"cha": 3,
+			"save": {
+				"con": "+13",
+				"wis": "+8"
+			},
+			"skill": {
+				"athletics": "+14",
+				"perception": "+8"
+			},
+			"passive": 18,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Empty Shell",
+					"entries": [
+						"Kuroari must either be controlled by another creature capable of controlling puppets or be piloted by a Medium or smaller creature."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kuroari makes two blade attacks."
+					]
+				},
+				{
+					"name": "Blade",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}31 ({@damage 4d12 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Black Secret Technique",
+					"entries": [
+						"Machine Two Shot. One creature within 30 feet must succeed a {@dc 17} Intelligence saving throw or move inside Kuroari's space and be {@condition restrained} until Kuroari is reduced to 0 hit points or uses its action to end this effect. Kuroari may use have this active a maximum of twice at a time. While one use is active, Kuroari loses its extra attack. While both uses are active, Kuroari can't use its action for any other purpose other than freeing a creature."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Karasu",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 171,
+				"formula": "18d8 + 90"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 2,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"perception": "+7"
+			},
+			"senses": [
+				"blindsight 20 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Empty Shell",
+					"entries": [
+						"Karasu must either be controlled by another creature capable of controlling puppets."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Karasu makes two unarmed strike or Senbon Volley attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning or slashing damage."
+					]
+				},
+				{
+					"name": "Senbon Volley",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 15/30 ft., one creature. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Smoke Bomb",
+					"entries": [
+						"Karasu fires a smoke bomb anywhere within 45 feet, creating a heavily obscured 10 ft. radius area for 1 minute or until a substantial wind blows it away."
+					]
+				},
+				{
+					"name": "Black Secret Technique",
+					"entries": [
+						"Machine One Shot. One creature within 30 feet must succeed a {@dc 17} Intelligence saving throw or move inside Karasu's space and be {@condition restrained} until Karasu is reduced to 0 hit points or uses its action to end this effect. While this is active, Karasu can't use its action for any other purpose."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
+		}
+	]
+}
