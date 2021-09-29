@@ -1,0 +1,129 @@
+{
+	"siteVersion": "1.136.0",
+	"monster": [
+		{
+			"name": "Roshi",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 187,
+				"formula": "22d8 + 88"
+			},
+			"speed": {
+				"walk": 65
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 12,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"constitution": "+8"
+			},
+			"skill": {
+				"acrobatics": "+6",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"Roshi has 45 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Endurance",
+					"entries": [
+						"When Roshi is targeted by an effect that allows him to make a Constitution saving throw to take half damage on a success, he takes no damage on a success and half damage on a failure."
+					]
+				},
+				{
+					"name": "Jinchuriki Regeneration",
+					"entries": [
+						"At the beginning of each of his turns, Roshi regains 8 hit points"
+					]
+				},
+				{
+					"name": "Jinchuriki Resistance",
+					"entries": [
+						"Roshi has advantage on Dexterity and Constitution saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Roshi can make 2 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@dice 3d6 + 4}) magical bludgeoning damage. On a miss, Roshi still deals half damage."
+					]
+				},
+				{
+					"name": "Lava Style",
+					"entries": [
+						"Scorching Rock (17 Chakra). Ranged Spell Attack: {@hit 7} to hit, reach 5 ft., one target. {@h}16 ({@damage 4d6 + 1}) fire damage + 8 ({@damage 2d4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Tailed Beast Bomb (20 Chakra)",
+					"entries": [
+						"All creatures in a 10 ft. by 60 ft. line or 20 ft. radius 60 ft. from Roshi must succeed a {@dc 15} Dexterity saving throw. On a failure, they take 60 ({@damage 10d10 + 1}) force damage, are pushed to the closest edge of the area, and fall {@condition prone}. On a success, they take half as much damage. This jutsu ignores evasion."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Return Strike",
+					"entries": [
+						"When a creature fails to hit Roshi with a melee attack, he may make an unarmed strike."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
