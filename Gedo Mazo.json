@@ -1,0 +1,198 @@
+{
+	"siteVersion": "1.136.0",
+	"monster": [
+		{
+			"name": "Gedo Mazo",
+			"source": "",
+			"page": 0,
+			"size": "G",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"beast"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 153,
+				"formula": "18d8 + 72"
+			},
+			"speed": {
+				"walk": 75
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 18,
+			"int": 16,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"dex": "+9",
+				"con": "+9"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"arcana": "+8",
+				"athletics": "+7",
+				"history": "+8",
+				"intimidation": "+5",
+				"perception": "+6"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"fire",
+				"cold",
+				"radiant",
+				"necrotic",
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"frightened",
+				"prone",
+				"charmed",
+				"poisoned"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Chakra",
+					"entries": [
+						"The Gedo Mazo has 75 chakra points which he can expend. All chakra points are regained at the end of a long rest."
+					]
+				},
+				{
+					"name": "Endurance",
+					"entries": [
+						"When the Gedo Mazo is targeted by an area effect that lets him make a Constitution saving throw to take only half damage, such as fireball, he instead takes no damage if he succeeds on the saving throw, and only half damage if he fails the save."
+					]
+				},
+				{
+					"name": "Ninja Speed",
+					"entries": [
+						"The Gedo Mazo can take the dash, dodge, and disengage actions as a bonus action, and can move along vertical surfaces."
+					]
+				},
+				{
+					"name": "Tailed Beasts",
+					"entries": [
+						"The Gedo Mazo must spend 1 less chakra on all jutsu (included in actions), he regains 10 hit points at the start of each of his turns, he has advantage on Strength and Dexterity checks and saving throws, and has a damage reduction of 5."
+					]
+				},
+				{
+					"name": "Unliving",
+					"entries": [
+						"The Gedo Mazo is not alive in its own right. One creature within 300 feet with a Rinnegan must control it. If this creature becomes {@condition unconscious} or {@condition paralyzed}, the statue does as well."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"the Gedo Mazo can make 3 unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}14 ({@damage 5d4 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Hidden Chakra",
+					"entries": [
+						"As a bonus action, the Gedo Mazo regains 16 chakra points."
+					]
+				},
+				{
+					"name": "Chakra Transfer (1+ Chakra)",
+					"entries": [
+						"The Gedo Mazo grants one creature he can touch a number of Red Chakra equal to the amount he spends."
+					]
+				},
+				{
+					"name": "Demonic Statue Chains (15 Chakra)",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 100 ft., one target. {@h}44 ({@damage 5d8 + 4}) psychic damage and is {@condition grappled} by the Gedo Mazo for 1 minute (concentration) or until they win the grapple contest. Jinchuriki {@condition grappled} by this Jutsu are not able to access their Subclass features for its duration. Tailed Beasts that are affected by this Jutsu are {@condition paralyzed} for the duration. As an action, the Gedo Mazo can deal 13 ({@damage 2d8 + 4}) psychic damage to affected creatures."
+					]
+				},
+				{
+					"name": "Nine Dragons Consuming Seal (20 Chakra)",
+					"entries": [
+						"The Gedo Mazo exhales a 60 foot cone of blueish-purple dragons made of chakra. Any creatures within range must succeed a {@dc 16} Constitution saving throw. On a failure, they lose 10 ({@dice 3d6}) chakra points or hit points and the creature controlling the statue regains half as much chakra.",
+						"Alternatively, over three days with the assistance of at least 9 CR 10 or greater humanoids, the Gedo Mazo is able to extract and absorb 1 Tailed Beast from its jinchuriki, or absorb 1 free Tailed Beast. After absorbing all 9 Tailed Beasts, it becomes the Ten-Tails."
+					]
+				},
+				{
+					"name": "Transformation (1 Chakra)",
+					"entries": [
+						"the Gedo Mazo becomes identical to a person, creature or non-magical object he a complete visual image of. This can not be a light source, armor, tool, or vehicle and, and he can not recreate a magical effect. Creatures must make a {@dc 16} Investigation check to realize that he is transformed. If the creature saw him performing the Jutsu, they automatically succeed. This does not change statistics, save for granting the creature's swimming and flying speeds."
+					]
+				},
+				{
+					"name": "Body Flicker (2 Chakra)",
+					"entries": [
+						"The Gedo Mazo's movement speed doubles, and his movement does not provoke attacks of opportunity."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Substitution (2+ Chakra)",
+					"entries": [
+						"When the Gedo Mazo is hit by an attack and would take damage, he decreases the damage by 25 ({@dice 1d10 + 20}) and teleports up to 15 ft. in any direction to an unoccupied space, during which he takes the Hide action. A generic object is left in his place and he takes any remaining damage from that attack. The Gedo Mazo can add reduce this damage by an additional 6 ({@dice 1d10}) points per chakra point spent over the initial cost."
+					]
+				}
+			],
+			"senseTags": [
+				"B",
+				"SD",
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"unconscious"
+			]
+		}
+	]
+}
