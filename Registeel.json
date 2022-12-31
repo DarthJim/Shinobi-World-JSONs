@@ -1,0 +1,166 @@
+{
+	"siteVersion": "1.167.7",
+	"monster": [
+		{
+			"name": "Registeel",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 218,
+				"formula": "19d10 + 114"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 22,
+			"int": 14,
+			"wis": 16,
+			"cha": 11,
+			"save": {
+				"str": "+12",
+				"con": "+12",
+				"wis": "+9"
+			},
+			"passive": 13,
+			"resist": [
+				{
+					"special": "damage from spells"
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Primordial"
+			],
+			"cr": "19",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Registeel is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"Registeel's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Registeel has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Clear Body",
+					"entries": [
+						"Registeel is immune to any effect that would cause it to gain disadvantage on attack rolls, ability checks, or saving throws."
+					]
+				},
+				{
+					"name": "Damage Threshold",
+					"entries": [
+						"Registeel has immunity to all damage unless it takes an amount of damage that equals or exceeds 10."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Registeel makes two Iron Head attacks and two Flash Cannon attacks. It can replace any two attacks with a Steel Roller or a Steel Beam attack, available."
+					]
+				},
+				{
+					"name": "Iron Head",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Flash Cannon",
+					"entries": [
+						"{@atk rs} {@hit 12} to hit, range 80/320 ft., one target. {@h}19 ({@damage 3d8 + 6}) force damage."
+					]
+				},
+				{
+					"name": "Steel Roller {@recharge 5}",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}33 ({@damage 6d8 + 6}) bludgeoning damage, and the target must succeed on a {@dc 20} Strength saving throw or fall {@condition prone}."
+					]
+				},
+				{
+					"name": "Steel Beam {@recharge 5}",
+					"entries": [
+						"{@atk rs} {@hit 12} to hit, range 80/320 ft., one target. {@h}28 ({@damage 5d8 + 6}) force damage, and the target must succeed on a {@dc 20} Constitution saving throw or be {@condition stunned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Superpower (1/Day)",
+					"entries": [
+						"Registeel regains 100 hit points. Until the end of it next turn, it has disadvantage on all attack rolls, and attack rolls against it have advantage."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone",
+				"stunned"
+			]
+		}
+	]
+}
